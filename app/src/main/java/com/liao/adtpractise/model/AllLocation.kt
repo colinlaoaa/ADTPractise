@@ -15,13 +15,13 @@ data class Info(
 )
 
 data class Result(
-    var created: String,
-    var dimension: String,
-    var id: String,
-    var name: String,
-    var residents: List<String>,
-    var type: String,
-    var url: String
+    var created: String?=null,
+    var dimension: String?=null,
+    var id: String?=null,
+    var name: String?=null,
+    var residents: List<String>?=null,
+    var type: String?=null,
+    var url: String?=null
 ):Serializable{
     companion object{
        const val KEY = "key"
